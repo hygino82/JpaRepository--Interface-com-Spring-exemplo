@@ -6,13 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "tb_users")
+@Entity//marca a classe como uma entidade
+@Table(name = "tb_users")//marca a tabela tb_users para guardar elementos desta classe
 public class User {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)//faz o id ser gerado automaticamente
+	private Long id;//id tipo Long
 	private String name;
 	private String email;
 	private Double salary;
